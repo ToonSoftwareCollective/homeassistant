@@ -1,0 +1,3 @@
+module apps.homeassistant
+HomeassistantApp 1.0 HomeassistantApp.qml
+HomeassistantTile 1.0 HomeassistantTile.qml
