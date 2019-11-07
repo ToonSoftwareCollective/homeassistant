@@ -1,4 +1,4 @@
-import QtQuick 1.1
+import QtQuick 2.1
 import qb.components 1.0
 
 Screen {
@@ -260,7 +260,7 @@ Screen {
                     x: 0; y: 0
                     width: 54
                     height: 36
-                    source: "./drawables/backgroundOff.png"
+                    source: "qrc:/tsc/backgroundOff.png"
                     smooth: true
 
                     MouseArea {
@@ -282,7 +282,7 @@ Screen {
                     x: 1; y: 0
                     width: 32
                     height: 36
-                    source: "./drawables/knob.png"
+                    source: "qrc:/tsc/knob.png"
 
                     MouseArea {
                         anchors.fill: parent
@@ -302,13 +302,13 @@ Screen {
                     State {
                         name: "on"
                         PropertyChanges { target: knob6; x: 22 }
-                        PropertyChanges { target: sslButton; source: "./drawables/backgroundOn.png" }
+                        PropertyChanges { target: sslButton; source: "qrc:/tsc/backgroundOn.png" }
                         PropertyChanges { target: sslSwitch; on: true }
                     },
                     State {
                         name: "off"
                         PropertyChanges { target: knob6; x: 1 }
-                        PropertyChanges { target: sslButton; source: "./drawables/backgroundOff.png" }
+                        PropertyChanges { target: sslButton; source: "qrc:/tsc/backgroundOff.png" }
                         PropertyChanges { target: sslSwitch; on: false }
                     }
                 ]
@@ -373,7 +373,7 @@ Screen {
                     x: 0; y: 0
                     width: 54
                     height: 36
-                    source: "./drawables/backgroundOff.png"
+                    source: "qrc:/tsc/backgroundOff.png"
                     smooth: true
 
                     MouseArea {
@@ -395,7 +395,7 @@ Screen {
                     x: 1; y: 0
                     width: 32
                     height: 36
-                    source: "./drawables/knob.png"
+                    source: "qrc:/tsc/knob.png"
 
                     MouseArea {
                         anchors.fill: parent
@@ -415,13 +415,13 @@ Screen {
                     State {
                         name: "on"
                         PropertyChanges { target: knob7; x: 22 }
-                        PropertyChanges { target: clockButton; source: "./drawables/backgroundOn.png" }
+                        PropertyChanges { target: clockButton; source: "qrc:/tsc/backgroundOn.png" }
                         PropertyChanges { target: clockSwitch; on: true }
                     },
                     State {
                         name: "off"
                         PropertyChanges { target: knob7; x: 1 }
-                        PropertyChanges { target: clockButton; source: "./drawables/backgroundOff.png" }
+                        PropertyChanges { target: clockButton; source: "qrc:/tsc/backgroundOff.png" }
                         PropertyChanges { target: clockSwitch; on: false }
                     }
                 ]
@@ -485,7 +485,7 @@ Screen {
                     x: 0; y: 0
                     width: 54
                     height: 36
-                    source: "./drawables/backgroundOff.png"
+                    source: "qrc:/tsc/backgroundOff.png"
                     smooth: true
 
                     MouseArea {
@@ -507,7 +507,7 @@ Screen {
                     x: 1; y: 0
                     width: 32
                     height: 36
-                    source: "./drawables/knob.png"
+                    source: "qrc:/tsc/knob.png"
 
                     MouseArea {
                         anchors.fill: parent
@@ -527,13 +527,13 @@ Screen {
                     State {
                         name: "on"
                         PropertyChanges { target: knob8; x: 22 }
-                        PropertyChanges { target: legacyButton; source: "./drawables/backgroundOn.png" }
+                        PropertyChanges { target: legacyButton; source: "qrc:/tsc/backgroundOn.png" }
                         PropertyChanges { target: legacySwitch; on: true }
                     },
                     State {
                         name: "off"
                         PropertyChanges { target: knob8; x: 1 }
-                        PropertyChanges { target: legacyButton; source: "./drawables/backgroundOff.png" }
+                        PropertyChanges { target: legacyButton; source: "qrc:/tsc/backgroundOff.png" }
                         PropertyChanges { target: legacySwitch; on: false }
                     }
                 ]
@@ -716,7 +716,7 @@ Screen {
                     right: parent.right
                     rightMargin: 20
                 }
-                source: "./drawables/navArrow-left.png"
+                source: "qrc:/tsc/navArrow-left.png"
                 smooth: true
             }
 
@@ -733,7 +733,7 @@ Screen {
             id: navPageImage1
             width: 100
             height: 28
-            source: "./drawables/page1.png"
+            source: "qrc:/tsc/page1.png"
             smooth: true
             anchors {
                 horizontalCenter: parent.horizontalCenter
@@ -753,7 +753,7 @@ Screen {
                 id: navRightButton1
                 width: 18
                 height: 28
-                source: "./drawables/navArrow-right.png"
+                source: "qrc:/tsc/navArrow-right.png"
                 smooth: true 
                 anchors {
                     left: parent.left
@@ -905,7 +905,7 @@ Screen {
                 id: navLeftButton2
                 width: 18
                 height: 28
-                source: "./drawables/navArrow-left.png"
+                source: "qrc:/tsc/navArrow-left.png"
                 smooth: true
                 anchors {
                     right: parent.right
@@ -926,7 +926,7 @@ Screen {
             id: navPageImage2
             width: 100
             height: 28
-            source: "./drawables/page2.png"
+            source: "qrc:/tsc/page2.png"
             smooth: true
             anchors {
                 horizontalCenter: parent.horizontalCenter
@@ -946,7 +946,7 @@ Screen {
                 id: navRightButton2
                 width: 18
                 height: 28
-                source: "./drawables/navArrow-right.png"
+                source: "qrc:/tsc/navArrow-right.png"
                 smooth: true 
                 anchors {
                     left: parent.left
@@ -1083,7 +1083,7 @@ Screen {
                 id: navLeftButton3
                 width: 18
                 height: 28
-                source: "./drawables/navArrow-left.png"
+                source: "qrc:/tsc/navArrow-left.png"
                 smooth: true
                 anchors {
                     right: parent.right
@@ -1104,7 +1104,7 @@ Screen {
                 id: navPageImage3
                 width: 100
                 height: 28
-                source: "./drawables/page3.png"
+                source: "qrc:/tsc/page3.png"
                 smooth: true 
                 anchors {
                     horizontalCenter: parent.horizontalCenter
@@ -1124,7 +1124,7 @@ Screen {
                 id: navRightButton3
                 width: 18
                 height: 28
-                source: "./drawables/navArrow-right.png"
+                source: "qrc:/tsc/navArrow-right.png"
                 smooth: true 
                 anchors {
                     left: parent.left
@@ -1211,7 +1211,7 @@ Screen {
                 id: navLeftButton4
                 width: 18
                 height: 28
-                source: "./drawables/navArrow-left.png"
+                source: "qrc:/tsc/navArrow-left.png"
                 smooth: true
                 anchors {
                     right: parent.right
@@ -1232,7 +1232,7 @@ Screen {
                 id: navPageImage4
                 width: 100
                 height: 28
-                source: "./drawables/page4.png"
+                source: "qrc:/tsc/page4.png"
                 smooth: true 
                 anchors {
                     horizontalCenter: parent.horizontalCenter
@@ -1252,7 +1252,7 @@ Screen {
                 id: navRightButton4
                 width: 18
                 height: 28
-                source: "./drawables/navArrow-right.png"
+                source: "qrc:/tsc/navArrow-right.png"
                 smooth: true 
                 anchors {
                     left: parent.left

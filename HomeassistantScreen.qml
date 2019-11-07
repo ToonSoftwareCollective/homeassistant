@@ -1,4 +1,4 @@
-import QtQuick 1.1
+import QtQuick 2.1
 import qb.components 1.0
 
 Screen {
@@ -226,7 +226,7 @@ Screen {
 
         Image {
             id: homeAssistantIconMain
-            source: "./drawables/homeAssistantIconBig.png"
+            source: "qrc:/tsc/homeAssistantIconBig.png"
             anchors {
                 verticalCenter: parent.verticalCenter
                 right: parent.right
@@ -639,7 +639,7 @@ Screen {
                     id: homeAssistantSlider1Selection
                     width: parent.width
                     height: parent.height
-                    source: "./drawables/notselected.png"
+                    source: "qrc:/tsc/notselected.png"
                     smooth: true
                     anchors {
                         verticalCenter: parent.verticalCenter
@@ -650,12 +650,12 @@ Screen {
                         anchors.fill: parent
                         onClicked: {
                             if (app.connected) {
-                                parent.source = "./drawables/selected.png"
-                                homeAssistantSlider2Selection.source = "./drawables/notselected.png"
-                                homeAssistantSlider3Selection.source = "./drawables/notselected.png"
-                                homeAssistantSlider4Selection.source = "./drawables/notselected.png"
-                                homeAssistantSlider5Selection.source = "./drawables/notselected.png"
-                                homeAssistantSlider6Selection.source = "./drawables/notselected.png"
+                                parent.source = "qrc:/tsc/selected.png"
+                                homeAssistantSlider2Selection.source = "qrc:/tsc/notselected.png"
+                                homeAssistantSlider3Selection.source = "qrc:/tsc/notselected.png"
+                                homeAssistantSlider4Selection.source = "qrc:/tsc/notselected.png"
+                                homeAssistantSlider5Selection.source = "qrc:/tsc/notselected.png"
+                                homeAssistantSlider6Selection.source = "qrc:/tsc/notselected.png"
                                 app.setHomeAssistant(app.homeAssistantSlider1, sliderOption1Label.text);
                             } else {
                                 app.logText("Unable to send command. Please verify connection settings.");
@@ -667,12 +667,12 @@ Screen {
                 states: [
                     State {
                         name: "on"
-                        PropertyChanges { target: homeAssistantSlider1Selection; source: "./drawables/selected.png" }
+                        PropertyChanges { target: homeAssistantSlider1Selection; source: "qrc:/tsc/selected.png" }
                         PropertyChanges { target: sliderRect1; on: true }
                     },
                     State {
                         name: "off"
-                        PropertyChanges { target: homeAssistantSlider1Selection; source: "./drawables/notselected.png" }
+                        PropertyChanges { target: homeAssistantSlider1Selection; source: "qrc:/tsc/notselected.png" }
                         PropertyChanges { target: sliderRect1; on: false }
                     }
                 ]
@@ -706,7 +706,7 @@ Screen {
                     id: homeAssistantSlider2Selection
                     width: parent.width
                     height: parent.height
-                    source: "./drawables/notselected.png"
+                    source: "qrc:/tsc/notselected.png"
                     smooth: true
                     anchors {
                         verticalCenter: parent.verticalCenter
@@ -717,12 +717,12 @@ Screen {
                         anchors.fill: parent
                         onClicked: {
                             if (app.connected) {
-                                parent.source = "./drawables/selected.png"
-                                homeAssistantSlider1Selection.source = "./drawables/notselected.png"
-                                homeAssistantSlider3Selection.source = "./drawables/notselected.png"
-                                homeAssistantSlider4Selection.source = "./drawables/notselected.png"
-                                homeAssistantSlider5Selection.source = "./drawables/notselected.png"
-                                homeAssistantSlider6Selection.source = "./drawables/notselected.png"
+                                parent.source = "qrc:/tsc/selected.png"
+                                homeAssistantSlider1Selection.source = "qrc:/tsc/notselected.png"
+                                homeAssistantSlider3Selection.source = "qrc:/tsc/notselected.png"
+                                homeAssistantSlider4Selection.source = "qrc:/tsc/notselected.png"
+                                homeAssistantSlider5Selection.source = "qrc:/tsc/notselected.png"
+                                homeAssistantSlider6Selection.source = "qrc:/tsc/notselected.png"
                                 app.setHomeAssistant(app.homeAssistantSlider1, sliderOption2Label.text);
                             } else {
                                 app.logText("Unable to send command. Please verify connection settings.");
@@ -734,12 +734,12 @@ Screen {
                 states: [
                     State {
                         name: "on"
-                        PropertyChanges { target: homeAssistantSlider2Selection; source: "./drawables/selected.png" }
+                        PropertyChanges { target: homeAssistantSlider2Selection; source: "qrc:/tsc/selected.png" }
                         PropertyChanges { target: sliderRect2; on: true }
                     },
                     State {
                         name: "off"
-                        PropertyChanges { target: homeAssistantSlider2Selection; source: "./drawables/notselected.png" }
+                        PropertyChanges { target: homeAssistantSlider2Selection; source: "qrc:/tsc/notselected.png" }
                         PropertyChanges { target: sliderRect2; on: false }
                     }
                 ]
@@ -773,7 +773,7 @@ Screen {
                     id: homeAssistantSlider3Selection
                     width: parent.width
                     height: parent.height
-                    source: "./drawables/notselected.png"
+                    source: "qrc:/tsc/notselected.png"
                     smooth: true
                     anchors {
                         verticalCenter: parent.verticalCenter
@@ -784,12 +784,12 @@ Screen {
                         anchors.fill: parent
                         onClicked: {
                             if (app.connected) {
-                                parent.source = "./drawables/selected.png"
-                                homeAssistantSlider1Selection.source = "./drawables/notselected.png"
-                                homeAssistantSlider2Selection.source = "./drawables/notselected.png"
-                                homeAssistantSlider4Selection.source = "./drawables/notselected.png"
-                                homeAssistantSlider5Selection.source = "./drawables/notselected.png"
-                                homeAssistantSlider6Selection.source = "./drawables/notselected.png"
+                                parent.source = "qrc:/tsc/selected.png"
+                                homeAssistantSlider1Selection.source = "qrc:/tsc/notselected.png"
+                                homeAssistantSlider2Selection.source = "qrc:/tsc/notselected.png"
+                                homeAssistantSlider4Selection.source = "qrc:/tsc/notselected.png"
+                                homeAssistantSlider5Selection.source = "qrc:/tsc/notselected.png"
+                                homeAssistantSlider6Selection.source = "qrc:/tsc/notselected.png"
                                 app.setHomeAssistant(app.homeAssistantSlider1, sliderOption3Label.text);
                             } else {
                                 app.logText("Unable to send command. Please verify connection settings.");
@@ -801,12 +801,12 @@ Screen {
                 states: [
                     State {
                         name: "on"
-                        PropertyChanges { target: homeAssistantSlider3Selection; source: "./drawables/selected.png" }
+                        PropertyChanges { target: homeAssistantSlider3Selection; source: "qrc:/tsc/selected.png" }
                         PropertyChanges { target: sliderRect3; on: true }
                     },
                     State {
                         name: "off"
-                        PropertyChanges { target: homeAssistantSlider3Selection; source: "./drawables/notselected.png" }
+                        PropertyChanges { target: homeAssistantSlider3Selection; source: "qrc:/tsc/notselected.png" }
                         PropertyChanges { target: sliderRect3; on: false }
                     }
                 ]
@@ -840,7 +840,7 @@ Screen {
                     id: homeAssistantSlider4Selection
                     width: parent.width
                     height: parent.height
-                    source: "./drawables/notselected.png"
+                    source: "qrc:/tsc/notselected.png"
                     smooth: true
                     anchors {
                         verticalCenter: parent.verticalCenter
@@ -851,12 +851,12 @@ Screen {
                         anchors.fill: parent
                         onClicked: {
                             if (app.connected) {
-                                parent.source = "./drawables/selected.png"
-                                homeAssistantSlider1Selection.source = "./drawables/notselected.png"
-                                homeAssistantSlider2Selection.source = "./drawables/notselected.png"
-                                homeAssistantSlider3Selection.source = "./drawables/notselected.png"
-                                homeAssistantSlider5Selection.source = "./drawables/notselected.png"
-                                homeAssistantSlider6Selection.source = "./drawables/notselected.png"
+                                parent.source = "qrc:/tsc/selected.png"
+                                homeAssistantSlider1Selection.source = "qrc:/tsc/notselected.png"
+                                homeAssistantSlider2Selection.source = "qrc:/tsc/notselected.png"
+                                homeAssistantSlider3Selection.source = "qrc:/tsc/notselected.png"
+                                homeAssistantSlider5Selection.source = "qrc:/tsc/notselected.png"
+                                homeAssistantSlider6Selection.source = "qrc:/tsc/notselected.png"
                                 app.setHomeAssistant(app.homeAssistantSlider1, sliderOption4Label.text);
                             } else {
                                 app.logText("Unable to send command. Please verify connection settings.");
@@ -868,12 +868,12 @@ Screen {
                 states: [
                     State {
                         name: "on"
-                        PropertyChanges { target: homeAssistantSlider4Selection; source: "./drawables/selected.png" }
+                        PropertyChanges { target: homeAssistantSlider4Selection; source: "qrc:/tsc/selected.png" }
                         PropertyChanges { target: sliderRect4; on: true }
                     },
                     State {
                         name: "off"
-                        PropertyChanges { target: homeAssistantSlider4Selection; source: "./drawables/notselected.png" }
+                        PropertyChanges { target: homeAssistantSlider4Selection; source: "qrc:/tsc/notselected.png" }
                         PropertyChanges { target: sliderRect4; on: false }
                     }
                 ]
@@ -907,7 +907,7 @@ Screen {
                     id: homeAssistantSlider5Selection
                     width: parent.width
                     height: parent.height
-                    source: "./drawables/notselected.png"
+                    source: "qrc:/tsc/notselected.png"
                     smooth: true
                     anchors {
                         verticalCenter: parent.verticalCenter
@@ -918,12 +918,12 @@ Screen {
                         anchors.fill: parent
                         onClicked: {
                             if (app.connected) {
-                                parent.source = "./drawables/selected.png"
-                                homeAssistantSlider1Selection.source = "./drawables/notselected.png"
-                                homeAssistantSlider2Selection.source = "./drawables/notselected.png"
-                                homeAssistantSlider3Selection.source = "./drawables/notselected.png"
-                                homeAssistantSlider4Selection.source = "./drawables/notselected.png"
-                                homeAssistantSlider6Selection.source = "./drawables/notselected.png"
+                                parent.source = "qrc:/tsc/selected.png"
+                                homeAssistantSlider1Selection.source = "qrc:/tsc/notselected.png"
+                                homeAssistantSlider2Selection.source = "qrc:/tsc/notselected.png"
+                                homeAssistantSlider3Selection.source = "qrc:/tsc/notselected.png"
+                                homeAssistantSlider4Selection.source = "qrc:/tsc/notselected.png"
+                                homeAssistantSlider6Selection.source = "qrc:/tsc/notselected.png"
                                 app.setHomeAssistant(app.homeAssistantSlider1, sliderOption5Label.text);
                             } else {
                                 app.logText("Unable to send command. Please verify connection settings.");
@@ -935,12 +935,12 @@ Screen {
                 states: [
                     State {
                         name: "on"
-                        PropertyChanges { target: homeAssistantSlider5Selection; source: "./drawables/selected.png" }
+                        PropertyChanges { target: homeAssistantSlider5Selection; source: "qrc:/tsc/selected.png" }
                         PropertyChanges { target: sliderRect5; on: true }
                     },
                     State {
                         name: "off"
-                        PropertyChanges { target: homeAssistantSlider5Selection; source: "./drawables/notselected.png" }
+                        PropertyChanges { target: homeAssistantSlider5Selection; source: "qrc:/tsc/notselected.png" }
                         PropertyChanges { target: sliderRect5; on: false }
                     }
                 ]
@@ -974,7 +974,7 @@ Screen {
                     id: homeAssistantSlider6Selection
                     width: parent.width
                     height: parent.height
-                    source: "./drawables/notselected.png"
+                    source: "qrc:/tsc/notselected.png"
                     smooth: true
                     anchors {
                         verticalCenter: parent.verticalCenter
@@ -985,12 +985,12 @@ Screen {
                         anchors.fill: parent
                         onClicked: {
                             if (app.connected) {
-                                parent.source = "./drawables/selected.png"
-                                homeAssistantSlider1Selection.source = "./drawables/notselected.png"
-                                homeAssistantSlider2Selection.source = "./drawables/notselected.png"
-                                homeAssistantSlider3Selection.source = "./drawables/notselected.png"
-                                homeAssistantSlider4Selection.source = "./drawables/notselected.png"
-                                homeAssistantSlider5Selection.source = "./drawables/notselected.png"
+                                parent.source = "qrc:/tsc/selected.png"
+                                homeAssistantSlider1Selection.source = "qrc:/tsc/notselected.png"
+                                homeAssistantSlider2Selection.source = "qrc:/tsc/notselected.png"
+                                homeAssistantSlider3Selection.source = "qrc:/tsc/notselected.png"
+                                homeAssistantSlider4Selection.source = "qrc:/tsc/notselected.png"
+                                homeAssistantSlider5Selection.source = "qrc:/tsc/notselected.png"
                                 app.setHomeAssistant(app.homeAssistantSlider1, sliderOption6Label.text);
                             } else {
                                 app.logText("Unable to send command. Please verify connection settings.");
@@ -1002,12 +1002,12 @@ Screen {
                 states: [
                     State {
                         name: "on"
-                        PropertyChanges { target: homeAssistantSlider6Selection; source: "./drawables/selected.png" }
+                        PropertyChanges { target: homeAssistantSlider6Selection; source: "qrc:/tsc/selected.png" }
                         PropertyChanges { target: sliderRect6; on: true }
                     },
                     State {
                         name: "off"
-                        PropertyChanges { target: homeAssistantSlider6Selection; source: "./drawables/notselected.png" }
+                        PropertyChanges { target: homeAssistantSlider6Selection; source: "qrc:/tsc/notselected.png" }
                         PropertyChanges { target: sliderRect6; on: false }
                     }
                 ]
@@ -1070,7 +1070,7 @@ Screen {
                 x: 0; y: 0
                 width: 54
                 height: 36
-                source: "./drawables/backgroundOff.png"
+                source: "qrc:/tsc/backgroundOff.png"
                 smooth: true
 
                 MouseArea {
@@ -1078,11 +1078,11 @@ Screen {
                     onClicked: {
                         if (app.connected) {
                             if (toggleSwitch1.state == "on") {
-                                parent.source = "./drawables/backgroundOff.png"
+                                parent.source = "qrc:/tsc/backgroundOff.png"
                                 knob.x = 1;
                                 app.setHomeAssistant(app.homeAssistantSwitch1, 0);
                             } else {
-                                parent.source = "./drawables/backgroundOn.png"
+                                parent.source = "qrc:/tsc/backgroundOn.png"
                                 knob.x = 22;
                                 app.setHomeAssistant(app.homeAssistantSwitch1, 1);
                             }
@@ -1098,18 +1098,18 @@ Screen {
                 x: 1; y: 0
                 width: 32
                 height: 36
-                source: "./drawables/knob.png"
+                source: "qrc:/tsc/knob.png"
 
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
                         if (app.connected) {
                             if (toggleSwitch1.state == "on") {
-                                homeAssistantSwitch1Button.source = "./drawables/backgroundOff.png"
+                                homeAssistantSwitch1Button.source = "qrc:/tsc/backgroundOff.png"
                                 parent.x = 1;
                                 app.setHomeAssistant(app.homeAssistantSwitch1, 0);
                             } else {
-                                homeAssistantSwitch1Button.source = "./drawables/backgroundOn.png"
+                                homeAssistantSwitch1Button.source = "qrc:/tsc/backgroundOn.png"
                                 parent.x = 22;
                                 app.setHomeAssistant(app.homeAssistantSwitch1, 1);
                             }
@@ -1124,13 +1124,13 @@ Screen {
                 State {
                     name: "on"
                     PropertyChanges { target: knob; x: 22 }
-                    PropertyChanges { target: homeAssistantSwitch1Button; source: "./drawables/backgroundOn.png" }
+                    PropertyChanges { target: homeAssistantSwitch1Button; source: "qrc:/tsc/backgroundOn.png" }
                     PropertyChanges { target: toggleSwitch1; on: true }
                 },
                 State {
                     name: "off"
                     PropertyChanges { target: knob; x: 1 }
-                    PropertyChanges { target: homeAssistantSwitch1Button; source: "./drawables/backgroundOff.png" }
+                    PropertyChanges { target: homeAssistantSwitch1Button; source: "qrc:/tsc/backgroundOff.png" }
                     PropertyChanges { target: toggleSwitch1; on: false }
                 }
             ]
@@ -1176,7 +1176,7 @@ Screen {
                 x: 0; y: 0
                 width: 54
                 height: 36
-                source: "./drawables/backgroundOff.png"
+                source: "qrc:/tsc/backgroundOff.png"
                 smooth: true
 
                 MouseArea {
@@ -1184,11 +1184,11 @@ Screen {
                     onClicked: {
                         if (app.connected) {
                             if (toggleSwitch2.state == "on") {
-                                parent.source = "./drawables/backgroundOff.png"
+                                parent.source = "qrc:/tsc/backgroundOff.png"
                                 knob2.x = 1;
                                 app.setHomeAssistant(app.homeAssistantSwitch2, 0);
                             } else {
-                                parent.source = "./drawables/backgroundOn.png"
+                                parent.source = "qrc:/tsc/backgroundOn.png"
                                 knob2.x = 22;
                                 app.setHomeAssistant(app.homeAssistantSwitch2, 1);
                             }
@@ -1204,18 +1204,18 @@ Screen {
                 x: 1; y: 0
                 width: 32
                 height: 36
-                source: "./drawables/knob.png"
+                source: "qrc:/tsc/knob.png"
 
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
                         if (app.connected) {
                             if (toggleSwitch2.state == "on") {
-                                homeAssistantSwitch2Button.source = "./drawables/backgroundOff.png"
+                                homeAssistantSwitch2Button.source = "qrc:/tsc/backgroundOff.png"
                                 parent.x = 1;
                                 app.setHomeAssistant(app.homeAssistantSwitch2, 0);
                             } else {
-                                homeAssistantSwitch2Button.source = "./drawables/backgroundOn.png"
+                                homeAssistantSwitch2Button.source = "qrc:/tsc/backgroundOn.png"
                                 parent.x = 22;
                                 app.setHomeAssistant(app.homeAssistantSwitch2, 1);
                             }
@@ -1230,13 +1230,13 @@ Screen {
                 State {
                     name: "on"
                     PropertyChanges { target: knob2; x: 22 }
-                    PropertyChanges { target: homeAssistantSwitch2Button; source: "./drawables/backgroundOn.png" }
+                    PropertyChanges { target: homeAssistantSwitch2Button; source: "qrc:/tsc/backgroundOn.png" }
                     PropertyChanges { target: toggleSwitch2; on: true }
                 },
                 State {
                     name: "off"
                     PropertyChanges { target: knob2; x: 1 }
-                    PropertyChanges { target: homeAssistantSwitch2Button; source: "./drawables/backgroundOff.png" }
+                    PropertyChanges { target: homeAssistantSwitch2Button; source: "qrc:/tsc/backgroundOff.png" }
                     PropertyChanges { target: toggleSwitch2; on: false }
                 }
             ]
@@ -1282,7 +1282,7 @@ Screen {
                 x: 0; y: 0
                 width: 54
                 height: 36
-                source: "./drawables/backgroundOff.png"
+                source: "qrc:/tsc/backgroundOff.png"
                 smooth: true
 
                 MouseArea {
@@ -1290,11 +1290,11 @@ Screen {
                     onClicked: {
                         if (app.connected) {
                             if (toggleSwitch3.state == "on") {
-                                parent.source = "./drawables/backgroundOff.png"
+                                parent.source = "qrc:/tsc/backgroundOff.png"
                                 knob3.x = 1;
                                 app.setHomeAssistant(app.homeAssistantSwitch3, 0);
                             } else {
-                                parent.source = "./drawables/backgroundOn.png"
+                                parent.source = "qrc:/tsc/backgroundOn.png"
                                 knob3.x = 22;
                                 app.setHomeAssistant(app.homeAssistantSwitch3, 1);
                             }
@@ -1310,18 +1310,18 @@ Screen {
                 x: 1; y: 0
                 width: 32
                 height: 36
-                source: "./drawables/knob.png"
+                source: "qrc:/tsc/knob.png"
 
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
                         if (app.connected) {
                             if (toggleSwitch3.state == "on") {
-                                homeAssistantSwitch3Button.source = "./drawables/backgroundOff.png"
+                                homeAssistantSwitch3Button.source = "qrc:/tsc/backgroundOff.png"
                                 parent.x = 1;
                                 app.setHomeAssistant(app.homeAssistantSwitch3, 0);
                             } else {
-                                homeAssistantSwitch3Button.source = "./drawables/backgroundOn.png"
+                                homeAssistantSwitch3Button.source = "qrc:/tsc/backgroundOn.png"
                                 parent.x = 22;
                                 app.setHomeAssistant(app.homeAssistantSwitch3, 1);
                             }
@@ -1336,13 +1336,13 @@ Screen {
                 State {
                     name: "on"
                     PropertyChanges { target: knob3; x: 22 }
-                    PropertyChanges { target: homeAssistantSwitch3Button; source: "./drawables/backgroundOn.png" }
+                    PropertyChanges { target: homeAssistantSwitch3Button; source: "qrc:/tsc/backgroundOn.png" }
                     PropertyChanges { target: toggleSwitch3; on: true }
                 },
                 State {
                     name: "off"
                     PropertyChanges { target: knob3; x: 1 }
-                    PropertyChanges { target: homeAssistantSwitch3Button; source: "./drawables/backgroundOff.png" }
+                    PropertyChanges { target: homeAssistantSwitch3Button; source: "qrc:/tsc/backgroundOff.png" }
                     PropertyChanges { target: toggleSwitch3; on: false }
                 }
             ]
@@ -1388,7 +1388,7 @@ Screen {
                 x: 0; y: 0
                 width: 54
                 height: 36
-                source: "./drawables/backgroundOff.png"
+                source: "qrc:/tsc/backgroundOff.png"
                 smooth: true
 
                 MouseArea {
@@ -1396,11 +1396,11 @@ Screen {
                     onClicked: {
                         if (app.connected) {
                             if (toggleSwitch4.state == "on") {
-                                parent.source = "./drawables/backgroundOff.png"
+                                parent.source = "qrc:/tsc/backgroundOff.png"
                                 knob4.x = 1;
                                 app.setHomeAssistant(app.homeAssistantSwitch4, 0);
                             } else {
-                                parent.source = "./drawables/backgroundOn.png"
+                                parent.source = "qrc:/tsc/backgroundOn.png"
                                 knob4.x = 22;
                                 app.setHomeAssistant(app.homeAssistantSwitch4, 1);
                             }
@@ -1416,18 +1416,18 @@ Screen {
                 x: 1; y: 0
                 width: 32
                 height: 36
-                source: "./drawables/knob.png"
+                source: "qrc:/tsc/knob.png"
 
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
                         if (app.connected) {
                             if (toggleSwitch4.state == "on") {
-                                homeAssistantSwitch4Button.source = "./drawables/backgroundOff.png"
+                                homeAssistantSwitch4Button.source = "qrc:/tsc/backgroundOff.png"
                                 parent.x = 1;
                                 app.setHomeAssistant(app.homeAssistantSwitch4, 0);
                             } else {
-                                homeAssistantSwitch4Button.source = "./drawables/backgroundOn.png"
+                                homeAssistantSwitch4Button.source = "qrc:/tsc/backgroundOn.png"
                                 parent.x = 22;
                                 app.setHomeAssistant(app.homeAssistantSwitch4, 1);
                             }
@@ -1442,13 +1442,13 @@ Screen {
                 State {
                     name: "on"
                     PropertyChanges { target: knob4; x: 22 }
-                    PropertyChanges { target: homeAssistantSwitch4Button; source: "./drawables/backgroundOn.png" }
+                    PropertyChanges { target: homeAssistantSwitch4Button; source: "qrc:/tsc/backgroundOn.png" }
                     PropertyChanges { target: toggleSwitch4; on: true }
                 },
                 State {
                     name: "off"
                     PropertyChanges { target: knob4; x: 1 }
-                    PropertyChanges { target: homeAssistantSwitch4Button; source: "./drawables/backgroundOff.png" }
+                    PropertyChanges { target: homeAssistantSwitch4Button; source: "qrc:/tsc/backgroundOff.png" }
                     PropertyChanges { target: toggleSwitch4; on: false }
                 }
             ]
@@ -1494,7 +1494,7 @@ Screen {
                 x: 0; y: 0
                 width: 54
                 height: 36
-                source: "./drawables/backgroundOff.png"
+                source: "qrc:/tsc/backgroundOff.png"
                 smooth: true
 
                 MouseArea {
@@ -1502,11 +1502,11 @@ Screen {
                     onClicked: {
                         if (app.connected) {
                             if (toggleSwitch5.state == "on") {
-                                parent.source = "./drawables/backgroundOff.png"
+                                parent.source = "qrc:/tsc/backgroundOff.png"
                                 knob5.x = 1;
                                 app.setHomeAssistant(app.homeAssistantSwitch5, 0);
                             } else {
-                                parent.source = "./drawables/backgroundOn.png"
+                                parent.source = "qrc:/tsc/backgroundOn.png"
                                 knob5.x = 22;
                                 app.setHomeAssistant(app.homeAssistantSwitch5, 1);
                             }
@@ -1522,18 +1522,18 @@ Screen {
                 x: 1; y: 0
                 width: 32
                 height: 36
-                source: "./drawables/knob.png"
+                source: "qrc:/tsc/knob.png"
 
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
                         if (app.connected) {
                             if (toggleSwitch5.state == "on") {
-                                homeAssistantSwitch5Button.source = "./drawables/backgroundOff.png"
+                                homeAssistantSwitch5Button.source = "qrc:/tsc/backgroundOff.png"
                                 parent.x = 1;
                                 app.setHomeAssistant(app.homeAssistantSwitch5, 0);
                             } else {
-                                homeAssistantSwitch5Button.source = "./drawables/backgroundOn.png"
+                                homeAssistantSwitch5Button.source = "qrc:/tsc/backgroundOn.png"
                                 parent.x = 22;
                                 app.setHomeAssistant(app.homeAssistantSwitch5, 1);
                             }
@@ -1548,13 +1548,13 @@ Screen {
                 State {
                     name: "on"
                     PropertyChanges { target: knob5; x: 22 }
-                    PropertyChanges { target: homeAssistantSwitch5Button; source: "./drawables/backgroundOn.png" }
+                    PropertyChanges { target: homeAssistantSwitch5Button; source: "qrc:/tsc/backgroundOn.png" }
                     PropertyChanges { target: toggleSwitch5; on: true }
                 },
                 State {
                     name: "off"
                     PropertyChanges { target: knob5; x: 1 }
-                    PropertyChanges { target: homeAssistantSwitch5Button; source: "./drawables/backgroundOff.png" }
+                    PropertyChanges { target: homeAssistantSwitch5Button; source: "qrc:/tsc/backgroundOff.png" }
                     PropertyChanges { target: toggleSwitch5; on: false }
                 }
             ]
@@ -1628,7 +1628,7 @@ Screen {
                 id: alarmRect1Button;
                 width: 50
                 height: 50
-                source: "./drawables/dialpadButton.png"
+                source: "qrc:/tsc/dialpadButton.png"
                 smooth: true
                 anchors {
                     verticalCenter: parent.verticalCenter
@@ -1670,7 +1670,7 @@ Screen {
                 id: alarmRect2Button;
                 width: 50
                 height: 50
-                source: "./drawables/dialpadButton.png"
+                source: "qrc:/tsc/dialpadButton.png"
                 smooth: true
                 anchors {
                     verticalCenter: parent.verticalCenter
@@ -1711,7 +1711,7 @@ Screen {
                 id: alarmRect3Button;
                 width: 50
                 height: 50
-                source: "./drawables/dialpadButton.png"
+                source: "qrc:/tsc/dialpadButton.png"
                 smooth: true
                 anchors {
                     verticalCenter: parent.verticalCenter
@@ -1753,7 +1753,7 @@ Screen {
                 id: alarmRect4Button;
                 width: 50
                 height: 50
-                source: "./drawables/dialpadButton.png"
+                source: "qrc:/tsc/dialpadButton.png"
                 smooth: true
                 anchors {
                     verticalCenter: parent.verticalCenter
@@ -1795,7 +1795,7 @@ Screen {
                 id: alarmRect5Button;
                 width: 50
                 height: 50
-                source: "./drawables/dialpadButton.png"
+                source: "qrc:/tsc/dialpadButton.png"
                 smooth: true
                 anchors {
                     verticalCenter: parent.verticalCenter
@@ -1836,7 +1836,7 @@ Screen {
                 id: alarmRect6Button;
                 width: 50
                 height: 50
-                source: "./drawables/dialpadButton.png"
+                source: "qrc:/tsc/dialpadButton.png"
                 smooth: true
                 anchors {
                     verticalCenter: parent.verticalCenter
@@ -1878,7 +1878,7 @@ Screen {
                 id: alarmRect7Button;
                 width: 50
                 height: 50
-                source: "./drawables/dialpadButton.png"
+                source: "qrc:/tsc/dialpadButton.png"
                 smooth: true
                 anchors {
                     verticalCenter: parent.verticalCenter
@@ -1920,7 +1920,7 @@ Screen {
                 id: alarmRect8Button;
                 width: 50
                 height: 50
-                source: "./drawables/dialpadButton.png"
+                source: "qrc:/tsc/dialpadButton.png"
                 smooth: true
                 anchors {
                     verticalCenter: parent.verticalCenter
@@ -1961,7 +1961,7 @@ Screen {
                 id: alarmRect9Button;
                 width: 50
                 height: 50
-                source: "./drawables/dialpadButton.png"
+                source: "qrc:/tsc/dialpadButton.png"
                 smooth: true
                 anchors {
                     verticalCenter: parent.verticalCenter
@@ -2003,7 +2003,7 @@ Screen {
                 id: alarmRectResetButton;
                 width: 50
                 height: 50
-                source: "./drawables/dialpadReset.png"
+                source: "qrc:/tsc/dialpadReset.png"
                 smooth: true
                 anchors {
                     verticalCenter: parent.verticalCenter
@@ -2033,7 +2033,7 @@ Screen {
                 id: alarmRect0Button;
                 width: 50
                 height: 50
-                source: "./drawables/dialpadButton.png"
+                source: "qrc:/tsc/dialpadButton.png"
                 smooth: true
                 anchors {
                     verticalCenter: parent.verticalCenter
@@ -2078,7 +2078,7 @@ Screen {
                 id: alarmRectEnterButton;
                 width: 50
                 height: 50
-                source: "./drawables/dialpadUnlocked.png"
+                source: "qrc:/tsc/dialpadUnlocked.png"
                 smooth: true
                 anchors {
                     verticalCenter: parent.verticalCenter
@@ -2093,10 +2093,10 @@ Screen {
 
                     if (app.connected) {
                         if (app.homeAssistantAlarmCode.length > 0 && alarmRectEnter.state == "on") {
-                            alarmRectEnterButton.source = "./drawables/dialpadUnlocked.png"
+                            alarmRectEnterButton.source = "qrc:/tsc/dialpadUnlocked.png"
                             app.setHomeAssistant(app.homeAssistantAlarm1, 0);
                         } else {
-                            alarmRectEnterButton.source = "./drawables/dialpadLocked.png"
+                            alarmRectEnterButton.source = "qrc:/tsc/dialpadLocked.png"
                             app.setHomeAssistant(app.homeAssistantAlarm1, 1);
                         }
                     } else {
@@ -2108,12 +2108,12 @@ Screen {
             states: [
                 State {
                     name: "on"
-                    PropertyChanges { target: alarmRectEnterButton; source: "./drawables/dialpadLocked.png" }
+                    PropertyChanges { target: alarmRectEnterButton; source: "qrc:/tsc/dialpadLocked.png" }
                     PropertyChanges { target: alarmRectEnter; on: true }
                 },
                 State {
                     name: "off"
-                    PropertyChanges { target: alarmRectEnterButton; source: "./drawables/dialpadUnlocked.png" }
+                    PropertyChanges { target: alarmRectEnterButton; source: "qrc:/tsc/dialpadUnlocked.png" }
                     PropertyChanges { target: alarmRectEnter; on: false }
                 }
             ]

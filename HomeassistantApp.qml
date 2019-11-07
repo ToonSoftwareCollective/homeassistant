@@ -1,4 +1,4 @@
-import QtQuick 1.1
+import QtQuick 2.1
 import qb.components 1.0
 import qb.base 1.0
 
@@ -10,7 +10,7 @@ App {
     property int debug : 0
  
     property url tileUrl : "HomeassistantTile.qml";
-    property url thumbnailIcon: "./drawables/homeAssistant.png";
+    property url thumbnailIcon: "qrc:/tsc/homeAssistant.png";
 
     property HomeassistantConfigurationScreen homeAssistantConfigurationScreen
     property url homeAssistantConfigurationScreenUrl : "HomeassistantConfigurationScreen.qml"
@@ -34,7 +34,7 @@ App {
 
     FileIO {
         id: tokenFile
-        source: "./token.txt"
+        source: "file:///mnt/data/tsc/homeassistant.token.txt"
     }
 
     property variant homeAssistantSettingsJson : {
@@ -46,7 +46,7 @@ App {
 
     FileIO {
         id: userSettingsFile
-        source: "./userSettings.json"
+        source: "file:///mnt/data/tsc/homeassistant.userSettings.json"
     }
 
     property string homeAssistantSensor1 : ""
@@ -71,7 +71,7 @@ App {
 
     FileIO {
         id: sensorFile
-        source: "./sensors.json"
+        source: "file:///mnt/data/tsc/homeassistant.sensors.json"
     }
 
     property variant homeAssistantSensor1Info : []
@@ -108,7 +108,7 @@ App {
 
     FileIO {
         id: scenesFile
-        source: "./scenes.json"
+        source: "file:///mnt/data/tsc/homeassistant.scenes.json"
     }
 
     property variant homeAssistantScene1Info : []
@@ -129,8 +129,8 @@ App {
     property real homeAssistantSlider1Min : 0.0
     property real homeAssistantSlider1Step : 0.0
     property int homeAssistantSlider1Options : 0
-    property string imgNotSelected : "./drawables/notselected.png"
-    property string imgSelected : "./drawables/selected.png"
+    property string imgNotSelected : "qrc:/tsc/notselected.png"
+    property string imgSelected : "qrc:/tsc/selected.png"
 
     property variant homeAssistantSlidersJson : {
         'Slider1': "",
@@ -138,7 +138,7 @@ App {
 
     FileIO {
         id: slidersFile
-        source: "./sliders.json"
+        source: "file:///mnt/data/tsc/homeassistant.sliders.json"
     }
 
     property variant homeAssistantSlider1Info : []
@@ -163,7 +163,7 @@ App {
 
     FileIO {
         id: switchFile
-        source: "./switches.json"
+        source: "file:///mnt/data/tsc/homeassistant.switches.json"
     }
 
     property variant homeAssistantSwitch1Info : []
@@ -193,7 +193,7 @@ App {
 
     FileIO {
         id: alarmFile
-        source: "./alarm.json"
+        source: "file:///mnt/data/tsc/homeassistant.alarm.json"
     }
 
     property string timeStr
@@ -270,7 +270,7 @@ App {
             }
             catch (err) {
                 var doc1 = new XMLHttpRequest();
-                doc1.open("PUT", "file:///HCBv2/qml/apps/homeassistant/token.txt");
+                doc1.open("PUT", "file:///mnt/data/tsc/homeassistant.token.txt");
                 doc1.send('');
                 logText("Please verify token.txt. " + err);
             }
@@ -296,7 +296,7 @@ App {
             "Legacy" : homeAssistantLegacy,
         }
         var doc2 = new XMLHttpRequest();
-        doc2.open("PUT", "file:///HCBv2/qml/apps/homeassistant/userSettings.json");
+        doc2.open("PUT", "file:///mnt/data/tsc/homeassistant.userSettings.json");
         doc2.send(JSON.stringify(homeAssistantSettingsJson));
 
         if (homeAssistantSSL == "yes") {
@@ -329,7 +329,7 @@ App {
             "Sensor8" : homeAssistantSensor8,
         }
         var doc3 = new XMLHttpRequest();
-        doc3.open("PUT", "file:///HCBv2/qml/apps/homeassistant/sensors.json");
+        doc3.open("PUT", "file:///mnt/data/tsc/homeassistant.sensors.json");
         doc3.send(JSON.stringify(homeAssistantSensorsJson));
         
         getSensorInfo();
@@ -397,7 +397,7 @@ App {
             "Scene4" : homeAssistantScene4,
         }
         var doc4 = new XMLHttpRequest();
-        doc4.open("PUT", "file:///HCBv2/qml/apps/homeassistant/scenes.json");
+        doc4.open("PUT", "file:///mnt/data/tsc/homeassistant.scenes.json");
         doc4.send(JSON.stringify(homeAssistantScenesJson));
 
         getSceneInfo();
@@ -429,7 +429,7 @@ App {
             "Slider1" : homeAssistantSlider1,
         }
         var doc5 = new XMLHttpRequest();
-        doc5.open("PUT", "file:///HCBv2/qml/apps/homeassistant/sliders.json");
+        doc5.open("PUT", "file:///mnt/data/tsc/homeassistant.sliders.json");
         doc5.send(JSON.stringify(homeAssistantSlidersJson));
 
         getSliderInfo();
@@ -515,7 +515,7 @@ App {
             "Switch5" : homeAssistantSwitch5,
         }
         var doc6 = new XMLHttpRequest();
-        doc6.open("PUT", "file:///HCBv2/qml/apps/homeassistant/switches.json");
+        doc6.open("PUT", "file:///mnt/data/tsc/homeassistant.switches.json");
         doc6.send(JSON.stringify(homeAssistantSwitchesJson));
 
         getSwitchInfo();
@@ -579,7 +579,7 @@ App {
             "Code" : homeAssistantAlarm2,
         }
         var doc7 = new XMLHttpRequest();
-        doc7.open("PUT", "file:///HCBv2/qml/apps/homeassistant/alarm.json");
+        doc7.open("PUT", "file:///mnt/data/tsc/homeassistant.alarm.json");
         doc7.send(JSON.stringify(homeAssistantAlarmJson));
 
         getAlarmInfo();
@@ -657,7 +657,7 @@ App {
             }
             catch (err) {
                 var doc8 = new XMLHttpRequest();
-                doc8.open("PUT", "file:///HCBv2/qml/apps/homeassistant/token.txt");
+                doc8.open("PUT", "file:///mnt/data/tsc/homeassistant.token.txt");
                 doc8.send('');
                 logText("Please add access token to token.txt. " + err);
             }

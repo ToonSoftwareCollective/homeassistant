@@ -1,4 +1,4 @@
-import QtQuick 1.1
+import QtQuick 2.1
 //import qb.base 1.0
 import qb.components 1.0
 
@@ -44,7 +44,7 @@ Tile {
 
 	Image {
 		id: homeAssistantIconSmall
-		source: "./drawables/homeAssistantIconSmall.png"
+		source: "qrc:/tsc/homeAssistantIconSmall.png"
 		anchors {
 			bottom: txtDate.bottom
 			right: parent.right
@@ -56,7 +56,7 @@ Tile {
 
 	Image {
 		id: homeAssistantIconSmallCenter
-		source: dimState ? "./drawables/homeAssistantIconSmallDim.png" : "./drawables/homeAssistantIconSmall.png"
+		source: dimState ? "qrc:/tsc/homeAssistantIconSmallDim.png" : "./drawables/homeAssistantIconSmall.png"
 		anchors {
 			baseline: parent.top
 			horizontalCenter: parent.horizontalCenter
