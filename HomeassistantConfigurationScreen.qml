@@ -260,7 +260,7 @@ Screen {
                     x: 0; y: 0
                     width: 54
                     height: 36
-                    source: "qrc:/tsc/backgroundOff.png"
+                    source: "qrc:/tsc/button_off.png"
                     smooth: true
 
                     MouseArea {
@@ -302,13 +302,13 @@ Screen {
                     State {
                         name: "on"
                         PropertyChanges { target: knob6; x: 22 }
-                        PropertyChanges { target: sslButton; source: "qrc:/tsc/backgroundOn.png" }
+                        PropertyChanges { target: sslButton; source: "qrc:/tsc/button_on.png" }
                         PropertyChanges { target: sslSwitch; on: true }
                     },
                     State {
                         name: "off"
                         PropertyChanges { target: knob6; x: 1 }
-                        PropertyChanges { target: sslButton; source: "qrc:/tsc/backgroundOff.png" }
+                        PropertyChanges { target: sslButton; source: "qrc:/tsc/button_off.png" }
                         PropertyChanges { target: sslSwitch; on: false }
                     }
                 ]
@@ -373,7 +373,7 @@ Screen {
                     x: 0; y: 0
                     width: 54
                     height: 36
-                    source: "qrc:/tsc/backgroundOff.png"
+                    source: "qrc:/tsc/button_off.png"
                     smooth: true
 
                     MouseArea {
@@ -415,13 +415,13 @@ Screen {
                     State {
                         name: "on"
                         PropertyChanges { target: knob7; x: 22 }
-                        PropertyChanges { target: clockButton; source: "qrc:/tsc/backgroundOn.png" }
+                        PropertyChanges { target: clockButton; source: "qrc:/tsc/button_on.png" }
                         PropertyChanges { target: clockSwitch; on: true }
                     },
                     State {
                         name: "off"
                         PropertyChanges { target: knob7; x: 1 }
-                        PropertyChanges { target: clockButton; source: "qrc:/tsc/backgroundOff.png" }
+                        PropertyChanges { target: clockButton; source: "qrc:/tsc/button_off.png" }
                         PropertyChanges { target: clockSwitch; on: false }
                     }
                 ]
@@ -485,7 +485,7 @@ Screen {
                     x: 0; y: 0
                     width: 54
                     height: 36
-                    source: "qrc:/tsc/backgroundOff.png"
+                    source: "qrc:/tsc/button_off.png"
                     smooth: true
 
                     MouseArea {
@@ -527,13 +527,13 @@ Screen {
                     State {
                         name: "on"
                         PropertyChanges { target: knob8; x: 22 }
-                        PropertyChanges { target: legacyButton; source: "qrc:/tsc/backgroundOn.png" }
+                        PropertyChanges { target: legacyButton; source: "qrc:/tsc/button_on.png" }
                         PropertyChanges { target: legacySwitch; on: true }
                     },
                     State {
                         name: "off"
                         PropertyChanges { target: knob8; x: 1 }
-                        PropertyChanges { target: legacyButton; source: "qrc:/tsc/backgroundOff.png" }
+                        PropertyChanges { target: legacyButton; source: "qrc:/tsc/button_off.png" }
                         PropertyChanges { target: legacySwitch; on: false }
                     }
                 ]

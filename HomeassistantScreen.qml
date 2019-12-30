@@ -1070,7 +1070,7 @@ Screen {
                 x: 0; y: 0
                 width: 54
                 height: 36
-                source: "qrc:/tsc/backgroundOff.png"
+                source: "qrc:/tsc/button_off.png"
                 smooth: true
 
                 MouseArea {
@@ -1078,11 +1078,11 @@ Screen {
                     onClicked: {
                         if (app.connected) {
                             if (toggleSwitch1.state == "on") {
-                                parent.source = "qrc:/tsc/backgroundOff.png"
+                                parent.source = "qrc:/tsc/button_off.png"
                                 knob.x = 1;
                                 app.setHomeAssistant(app.homeAssistantSwitch1, 0);
                             } else {
-                                parent.source = "qrc:/tsc/backgroundOn.png"
+                                parent.source = "qrc:/tsc/button_on.png"
                                 knob.x = 22;
                                 app.setHomeAssistant(app.homeAssistantSwitch1, 1);
                             }
@@ -1105,11 +1105,11 @@ Screen {
                     onClicked: {
                         if (app.connected) {
                             if (toggleSwitch1.state == "on") {
-                                homeAssistantSwitch1Button.source = "qrc:/tsc/backgroundOff.png"
+                                homeAssistantSwitch1Button.source = "qrc:/tsc/button_off.png"
                                 parent.x = 1;
                                 app.setHomeAssistant(app.homeAssistantSwitch1, 0);
                             } else {
-                                homeAssistantSwitch1Button.source = "qrc:/tsc/backgroundOn.png"
+                                homeAssistantSwitch1Button.source = "qrc:/tsc/button_on.png"
                                 parent.x = 22;
                                 app.setHomeAssistant(app.homeAssistantSwitch1, 1);
                             }
@@ -1124,13 +1124,13 @@ Screen {
                 State {
                     name: "on"
                     PropertyChanges { target: knob; x: 22 }
-                    PropertyChanges { target: homeAssistantSwitch1Button; source: "qrc:/tsc/backgroundOn.png" }
+                    PropertyChanges { target: homeAssistantSwitch1Button; source: "qrc:/tsc/button_on.png" }
                     PropertyChanges { target: toggleSwitch1; on: true }
                 },
                 State {
                     name: "off"
                     PropertyChanges { target: knob; x: 1 }
-                    PropertyChanges { target: homeAssistantSwitch1Button; source: "qrc:/tsc/backgroundOff.png" }
+                    PropertyChanges { target: homeAssistantSwitch1Button; source: "qrc:/tsc/button_off.png" }
                     PropertyChanges { target: toggleSwitch1; on: false }
                 }
             ]
@@ -1176,7 +1176,7 @@ Screen {
                 x: 0; y: 0
                 width: 54
                 height: 36
-                source: "qrc:/tsc/backgroundOff.png"
+                source: "qrc:/tsc/button_off.png"
                 smooth: true
 
                 MouseArea {
@@ -1184,11 +1184,11 @@ Screen {
                     onClicked: {
                         if (app.connected) {
                             if (toggleSwitch2.state == "on") {
-                                parent.source = "qrc:/tsc/backgroundOff.png"
+                                parent.source = "qrc:/tsc/button_on.png"
                                 knob2.x = 1;
                                 app.setHomeAssistant(app.homeAssistantSwitch2, 0);
                             } else {
-                                parent.source = "qrc:/tsc/backgroundOn.png"
+                                parent.source = "qrc:/tsc/button_off.png"
                                 knob2.x = 22;
                                 app.setHomeAssistant(app.homeAssistantSwitch2, 1);
                             }
@@ -1211,11 +1211,11 @@ Screen {
                     onClicked: {
                         if (app.connected) {
                             if (toggleSwitch2.state == "on") {
-                                homeAssistantSwitch2Button.source = "qrc:/tsc/backgroundOff.png"
+                                homeAssistantSwitch2Button.source = "qrc:/tsc/button_on.png"
                                 parent.x = 1;
                                 app.setHomeAssistant(app.homeAssistantSwitch2, 0);
                             } else {
-                                homeAssistantSwitch2Button.source = "qrc:/tsc/backgroundOn.png"
+                                homeAssistantSwitch2Button.source = "qrc:/tsc/button_off.png"
                                 parent.x = 22;
                                 app.setHomeAssistant(app.homeAssistantSwitch2, 1);
                             }
@@ -1230,13 +1230,13 @@ Screen {
                 State {
                     name: "on"
                     PropertyChanges { target: knob2; x: 22 }
-                    PropertyChanges { target: homeAssistantSwitch2Button; source: "qrc:/tsc/backgroundOn.png" }
+                    PropertyChanges { target: homeAssistantSwitch2Button; source: "qrc:/tsc/button_on.png" }
                     PropertyChanges { target: toggleSwitch2; on: true }
                 },
                 State {
                     name: "off"
                     PropertyChanges { target: knob2; x: 1 }
-                    PropertyChanges { target: homeAssistantSwitch2Button; source: "qrc:/tsc/backgroundOff.png" }
+                    PropertyChanges { target: homeAssistantSwitch2Button; source: "qrc:/tsc/button_off.png" }
                     PropertyChanges { target: toggleSwitch2; on: false }
                 }
             ]
@@ -1290,11 +1290,11 @@ Screen {
                     onClicked: {
                         if (app.connected) {
                             if (toggleSwitch3.state == "on") {
-                                parent.source = "qrc:/tsc/backgroundOff.png"
+                                parent.source = "qrc:/tsc/button_on.png"
                                 knob3.x = 1;
                                 app.setHomeAssistant(app.homeAssistantSwitch3, 0);
                             } else {
-                                parent.source = "qrc:/tsc/backgroundOn.png"
+                                parent.source = "qrc:/tsc/button_off.png"
                                 knob3.x = 22;
                                 app.setHomeAssistant(app.homeAssistantSwitch3, 1);
                             }
@@ -1317,11 +1317,11 @@ Screen {
                     onClicked: {
                         if (app.connected) {
                             if (toggleSwitch3.state == "on") {
-                                homeAssistantSwitch3Button.source = "qrc:/tsc/backgroundOff.png"
+                                homeAssistantSwitch3Button.source = "qrc:/tsc/button_on.png"
                                 parent.x = 1;
                                 app.setHomeAssistant(app.homeAssistantSwitch3, 0);
                             } else {
-                                homeAssistantSwitch3Button.source = "qrc:/tsc/backgroundOn.png"
+                                homeAssistantSwitch3Button.source = "qrc:/tsc/button_off.png"
                                 parent.x = 22;
                                 app.setHomeAssistant(app.homeAssistantSwitch3, 1);
                             }
@@ -1336,13 +1336,13 @@ Screen {
                 State {
                     name: "on"
                     PropertyChanges { target: knob3; x: 22 }
-                    PropertyChanges { target: homeAssistantSwitch3Button; source: "qrc:/tsc/backgroundOn.png" }
+                    PropertyChanges { target: homeAssistantSwitch3Button; source: "qrc:/tsc/button_on.png" }
                     PropertyChanges { target: toggleSwitch3; on: true }
                 },
                 State {
                     name: "off"
                     PropertyChanges { target: knob3; x: 1 }
-                    PropertyChanges { target: homeAssistantSwitch3Button; source: "qrc:/tsc/backgroundOff.png" }
+                    PropertyChanges { target: homeAssistantSwitch3Button; source: "qrc:/tsc/button_off.png" }
                     PropertyChanges { target: toggleSwitch3; on: false }
                 }
             ]
@@ -1388,7 +1388,7 @@ Screen {
                 x: 0; y: 0
                 width: 54
                 height: 36
-                source: "qrc:/tsc/backgroundOff.png"
+                source: "qrc:/tsc/button_off.png"
                 smooth: true
 
                 MouseArea {
@@ -1396,11 +1396,11 @@ Screen {
                     onClicked: {
                         if (app.connected) {
                             if (toggleSwitch4.state == "on") {
-                                parent.source = "qrc:/tsc/backgroundOff.png"
+                                parent.source = "qrc:/tsc/button_on.png"
                                 knob4.x = 1;
                                 app.setHomeAssistant(app.homeAssistantSwitch4, 0);
                             } else {
-                                parent.source = "qrc:/tsc/backgroundOn.png"
+                                parent.source = "qrc:/tsc/button_off.png"
                                 knob4.x = 22;
                                 app.setHomeAssistant(app.homeAssistantSwitch4, 1);
                             }
@@ -1423,11 +1423,11 @@ Screen {
                     onClicked: {
                         if (app.connected) {
                             if (toggleSwitch4.state == "on") {
-                                homeAssistantSwitch4Button.source = "qrc:/tsc/backgroundOff.png"
+                                homeAssistantSwitch4Button.source = "qrc:/tsc/button_on.png"
                                 parent.x = 1;
                                 app.setHomeAssistant(app.homeAssistantSwitch4, 0);
                             } else {
-                                homeAssistantSwitch4Button.source = "qrc:/tsc/backgroundOn.png"
+                                homeAssistantSwitch4Button.source = "qrc:/tsc/button_off.png"
                                 parent.x = 22;
                                 app.setHomeAssistant(app.homeAssistantSwitch4, 1);
                             }
@@ -1442,13 +1442,13 @@ Screen {
                 State {
                     name: "on"
                     PropertyChanges { target: knob4; x: 22 }
-                    PropertyChanges { target: homeAssistantSwitch4Button; source: "qrc:/tsc/backgroundOn.png" }
+                    PropertyChanges { target: homeAssistantSwitch4Button; source: "qrc:/tsc/button_on.png" }
                     PropertyChanges { target: toggleSwitch4; on: true }
                 },
                 State {
                     name: "off"
                     PropertyChanges { target: knob4; x: 1 }
-                    PropertyChanges { target: homeAssistantSwitch4Button; source: "qrc:/tsc/backgroundOff.png" }
+                    PropertyChanges { target: homeAssistantSwitch4Button; source: "qrc:/tsc/button_off.png" }
                     PropertyChanges { target: toggleSwitch4; on: false }
                 }
             ]
@@ -1494,7 +1494,7 @@ Screen {
                 x: 0; y: 0
                 width: 54
                 height: 36
-                source: "qrc:/tsc/backgroundOff.png"
+                source: "qrc:/tsc/button_off.png"
                 smooth: true
 
                 MouseArea {
@@ -1502,11 +1502,11 @@ Screen {
                     onClicked: {
                         if (app.connected) {
                             if (toggleSwitch5.state == "on") {
-                                parent.source = "qrc:/tsc/backgroundOff.png"
+                                parent.source = "qrc:/tsc/button_on.png"
                                 knob5.x = 1;
                                 app.setHomeAssistant(app.homeAssistantSwitch5, 0);
                             } else {
-                                parent.source = "qrc:/tsc/backgroundOn.png"
+                                parent.source = "qrc:/tsc/button_off.png"
                                 knob5.x = 22;
                                 app.setHomeAssistant(app.homeAssistantSwitch5, 1);
                             }
@@ -1529,11 +1529,11 @@ Screen {
                     onClicked: {
                         if (app.connected) {
                             if (toggleSwitch5.state == "on") {
-                                homeAssistantSwitch5Button.source = "qrc:/tsc/backgroundOff.png"
+                                homeAssistantSwitch5Button.source = "qrc:/tsc/button_on.png"
                                 parent.x = 1;
                                 app.setHomeAssistant(app.homeAssistantSwitch5, 0);
                             } else {
-                                homeAssistantSwitch5Button.source = "qrc:/tsc/backgroundOn.png"
+                                homeAssistantSwitch5Button.source = "qrc:/tsc/button_off.png"
                                 parent.x = 22;
                                 app.setHomeAssistant(app.homeAssistantSwitch5, 1);
                             }
@@ -1548,13 +1548,13 @@ Screen {
                 State {
                     name: "on"
                     PropertyChanges { target: knob5; x: 22 }
-                    PropertyChanges { target: homeAssistantSwitch5Button; source: "qrc:/tsc/backgroundOn.png" }
+                    PropertyChanges { target: homeAssistantSwitch5Button; source: "qrc:/tsc/button_on.png" }
                     PropertyChanges { target: toggleSwitch5; on: true }
                 },
                 State {
                     name: "off"
                     PropertyChanges { target: knob5; x: 1 }
-                    PropertyChanges { target: homeAssistantSwitch5Button; source: "qrc:/tsc/backgroundOff.png" }
+                    PropertyChanges { target: homeAssistantSwitch5Button; source: "qrc:/tsc/button_off.png" }
                     PropertyChanges { target: toggleSwitch5; on: false }
                 }
             ]
