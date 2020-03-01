@@ -49,7 +49,7 @@ Tile {
 
 	Image {
 		id: homeAssistantIconSmall
-		source: "./drawables/homeAssistantIconSmall.png"
+		source: "qrc:/tsc/homeAssistantIconSmall.png"
 		anchors {
 			bottom: txtDate.bottom
 			right: parent.right
@@ -61,7 +61,7 @@ Tile {
 
 	Image {
 		id: homeAssistantIconSmallCenter
-		source: dimState ? "./drawables/homeAssistantIconSmallDim.png" : "./drawables/homeAssistantIconSmall.png"
+		source: dimState ? "qrc:/tsc/homeAssistantIconSmallDim.png" : "qrc:/tsc/homeAssistantIconSmall.png"
 		anchors {
 			baseline: parent.top
 			horizontalCenter: parent.horizontalCenter
