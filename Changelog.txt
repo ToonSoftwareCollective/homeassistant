@@ -1,3 +1,6 @@
+1.0.7
+- updated Tile layout for Toon 2 (thanks dEADkIRK)
+
 1.0.6
 - Images references changed to existing ones in the resource file (some will be available in future resource file releases).
   JSON file is now filled correctly, so that Home Assistant works, by mAiden
