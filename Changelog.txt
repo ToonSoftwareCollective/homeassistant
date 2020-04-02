@@ -1,3 +1,6 @@
+1.0.8
+- dimmableColors update
+
 1.0.7
 - updated Tile layout for Toon 2 (thanks dEADkIRK)
 
