@@ -33,6 +33,7 @@ How to use:
 
 You need to manually generate a long-lived access token from your HomeAssistant setup and add this token to the "homeassistant.token.txt" file on your Toon. 
 This file is located at /mnt/data/tsc/homeassistant.token.txt. 
+
 To generate a token navigate to your user profile in the HomeAssistant gui and scroll down to the bottom where you see "Long-Lived Access Tokens" (and press generate). 
 The password textbox in the Toon HomeAssistant app can be left empty.
 
@@ -43,7 +44,8 @@ If you use SSL and Home Assistant version 0.73.0 or higher make sure to set 'ssl
 
 
 Restart the GUI of the Toon using TSC Settings, or run this command by SSH to restart Toons user interface
-      killall qt-gui
+
+    killall qt-gui
     
 Add the app called "homeassistant" to a new tile
 
