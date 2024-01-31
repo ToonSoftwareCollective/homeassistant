@@ -32,7 +32,9 @@ Install the homeassistant app through the TSC appstore.
 How to use:
 
 You need to manually generate a long-lived access token from your HomeAssistant setup and add this token to the "homeassistant.token.txt" file on your Toon. 
-This file is located at /mnt/data/tsc/homeassistant.token.txt. 
+This file is located at:
+
+   /mnt/data/tsc/homeassistant.token.txt. 
 
 To generate a token navigate to your user profile in the HomeAssistant gui and scroll down to the bottom where you see "Long-Lived Access Tokens" (and press generate). 
 The password textbox in the Toon HomeAssistant app can be left empty.
